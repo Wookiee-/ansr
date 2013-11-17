@@ -1,0 +1,26 @@
+This is file is created to show what bugs I have fixed and the
+author who supplied the fix.
+ANSR 1.0b2 Release
+=================
+Bug                     Author          Problem Caused
+=============           =======         ==================
+say_descr				Crashed on purged
+die_descr				Crashed on purged
+trust					Never worked at all
+medit_shield (OLC)			Couldn't be changed in OLC
+ANSR 1.0b1 Release
+==================
+Bug            		Author		Problem Caused
+=============           =======         ==================
+memory.c (removed)      None		Crashes frequently for no reason
+hedit new (removed)	None		Make new help files
+ANSR 1.0b Release
+==================
+Bug            		Author		Problem Caused
+=============           =======         ==================
+Forgot to update this part :P
+ANSR 1.0a Release
+==================
+Bug            		Author		Problem Caused
+=============           =======         ==================
+load_char_obj		Seronis		lookups in fread_char

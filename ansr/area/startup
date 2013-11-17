@@ -1,0 +1,20 @@
+#!/bin/csh
+
+set areapath = ../area
+set port = 9000
+cd $areapath
+
+# Set limits.
+if ( -e shutdown.txt ) rm -f shutdown.txt
+
+while ( 1 )
+    # Run nsr.
+    ../src/nsr $port >&! /dev/null
+
+    # Restart, giving old connections a chance to die.
+    if ( -e shutdown.txt ) then
+	rm -f shutdown.txt
+	exit 0
+    endif
+    sleep 15
+end
